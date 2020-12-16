@@ -1,0 +1,250 @@
+body {
+  background-color: #696667ff;
+}
+html {
+  scroll-behavior: smooth;
+}
+#h2Index {
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#monCanvas {
+  width: 900px;
+  height: 600px;
+  border: 1px solid black;
+  background: #af7d3c;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(25, 25, 29, 0.534);
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnJouer {
+  width: 900px;
+  height: 600px;
+  border: 1px solid black;
+  background: #964f4cff;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(25, 25, 29, 0.534);
+}
+
+/* //////////////////////////////////////////////// */
+/* Snippet pour crée un bouton design recuperé sur internet */
+#btnJouer > #b {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #567572ff;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+#btnJouer > #b:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+/* //////////////////////////////////////////////// */
+
+#cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cv button {
+  color: #fff !important;
+  border-radius: 8px;
+  background-color: #567572ff;
+  width: 200px;
+}
+#cv button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+#cvPage {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#choixPersonnage {
+  width: 900px;
+  height: 600px;
+  border: 1px solid black;
+  background: #964f4cff;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(25, 25, 29, 0.534);
+}
+#choixPersonnage img:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+#choixPersonnage img {
+  border-radius: 10px;
+}
+
+#modalJeu1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalJeu1Contenu {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#modalJeu1Contenu button {
+  width: 25%;
+  height: 20%;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 40px;
+}
+#modalJeu1Contenu h2 {
+  width: 100%;
+}
+#modalJeu1Contenu #resultat {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+#modalJeu1Contenu #reponseTour {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+#modalJeu1Contenu #repRobot {
+  /* justify-content: center; */
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#modalJeu2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalJeu2Contenu {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalJeu3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalJeu3Contenu {
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#morpion {
+  display: grid;
+  /* mdn https://developer.mozilla.org/fr/docs/Web/CSS/grid-template-columns */
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  border-radius: 5px;
+}
+#morpion div {
+  border: 2px solid black;
+  height: 100px;
+  text-align: center;
+  height: 100px;
+  font-size: 80px;
+  border-radius: 5px;
+}
+
+#miniJeuxValide {
+  color: crimson;
+  font-weight: bold;
+}
+#accesCV {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#accesCVContenu {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

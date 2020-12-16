@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="game.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="h2Index">
+      Gagnez les mini-jeux et accedez à mon CV de Développeur FullStack JS ❤️
+    </h2>
+    <div class="container">
+      <canvas id="monCanvas" style="display: none"> </canvas>
+    </div>
+    <div id="btnJouer"><button id="b">Jouer</button></div>
+    <div id="choixPersonnage" style="display: none">
+      <img id="perso1" src="./src/choix1.png" alt="" />
+      <img id="perso2" src="./src/choix2.png" alt="" />
+      <img id="perso3" src="./src/choix3.png" alt="" />
+      <img id="perso4" src="./src/choix4.png" alt="" />
+    </div>
+    <div id="modalJeu1" style="display: none">
+      <div id="modalJeu1Contenu">
+        <h2>Battez le robot en 3 points</h2>
+        <button id="pierre">👊🏼</button>
+        <button id="feuille">🖐🏼</button>
+        <button id="ciseau">✌🏼</button>
+        <div id="reponseTour"></div>
+        <div id="repRobot"></div>
+        <div id="resultat"></div>
+      </div>
+    </div>
+    <div id="modalJeu2" style="display: none">
+      <div id="modalJeu2Contenu">
+        <h2>Je pense à un chiffre entre 0 et 100</h2>
+        <h3>Devinez lequel ! Vous avez 7 chances !</h3>
+        <h3 id="chancesRestantes">❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</h3>
+        <input id="nbSaisie" type="number" min="0" max="100" /><br />
+        <button id="resultatNb">Resultat</button><br />
+        <div id="repNb"></div>
+      </div>
+    </div>
+    <div id="modalJeu3" style="display: none">
+      <div id="modalJeu3Contenu">
+        <h2>Morpion</h2>
+        <section id="morpion">
+          <!-- Creation data-id pour pourvoir recuperer les donnees via dataset en js-->
+          <div data-id="1" id="case1" class="carre"></div>
+          <div data-id="2" id="case2" class="carre"></div>
+          <div data-id="3" id="case3" class="carre"></div>
+          <div data-id="4" id="case4" class="carre"></div>
+          <div data-id="5" id="case5" class="carre"></div>
+          <div data-id="6" id="case6" class="carre"></div>
+          <div data-id="7" id="case7" class="carre"></div>
+          <div data-id="8" id="case8" class="carre"></div>
+          <div data-id="9" id="case9" class="carre"></div>
+        </section>
+        <h2 id="tourDeJouer"></h2>
+        <div id="gagnant"></div>
+      </div>
+    </div>
+    <div id="accesCV" style="display: none">
+      <div id="accesCVContenu">
+        <img src="./src/bravo1.png" alt="" height="300px" />
+      </div>
+    </div>
+    <br />
+    <div id="miniJeuxValide" style="text-align: center;"></div>
+    <br />
+    <div id="cv">
+      <button>
+        Accéder au CV sans jouer (bouhh 😢)
+      </button>
+    </div>
+    <br />
+
+    <img
+      OnClick="window.location='https://ucarecdn.com/c838788c-7f98-4960-bc41-055881592bd9/-/inline/yes/'"
+      style="display: none"
+      src="./src/Mehdy-Chelabi-DevJS.jpg"
+      id="cvPage"
+      alt="CV Mehdy Chelabi DevJS"
+    />
+
+    <!-- <script src="game.js"></script> -->
+    <script src="game-min.js"></script>
+  </body>
+</html>
